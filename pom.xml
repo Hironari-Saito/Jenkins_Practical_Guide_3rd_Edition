@@ -46,6 +46,7 @@
     <!-- Maven Properties -->
     <maven-compiler.version>3.6.1</maven-compiler.version>
     <maven-site.version>3.8.2</maven-site.version>
+    <maven-surefire.version>3.0.0-M4</maven-surefire.version>
     <maven-surefire-report.version>2.20</maven-surefire-report.version>
     <maven-war.version>3.0.0</maven-war.version>
     
@@ -64,7 +65,7 @@
     <findbugs-maven.version>3.0.4</findbugs-maven.version>
     
     <!-- JaCoCo Properties -->
-    <jacoco-maven.version>0.7.9</jacoco-maven.version>
+    <jacoco-maven.version>0.8.4</jacoco-maven.version>
     <jacoco.include.package>**/*</jacoco.include.package>
   </properties>
   
@@ -73,7 +74,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M4</version>
+        <version>${maven-surefire.version}</version>
         <configuration>
           <forkCount>0</forkCount>
           <useSystemClassLoader>false</useSystemClassLoader>
