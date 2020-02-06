@@ -65,7 +65,7 @@
     <findbugs-maven.version>3.0.4</findbugs-maven.version>
     
     <!-- JaCoCo Properties -->
-    <jacoco-maven.version>0.8.4</jacoco-maven.version>
+    <jacoco-maven.version>0.8.5</jacoco-maven.version>
     <jacoco.include.package>**/*</jacoco.include.package>
   </properties>
   
@@ -76,7 +76,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven-surefire.version}</version>
         <configuration>
-          <forkCount>0</forkCount>
+          <forkCount>1</forkCount>
           <useSystemClassLoader>false</useSystemClassLoader>
         </configuration>
       </plugin>
